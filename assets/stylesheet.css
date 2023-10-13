@@ -1,16 +1,37 @@
  header {
    display: flexbox;
    flex-direction: column;
-   background-color: #333;
+   background-color: #07253d;
    color: #fff;
    padding: 15px;
    text-align: center;
  }
 
+
+
  .header-content {
    display: flexbox;
    flex-direction: column;
    justify-content: center;
+ }
+/* Remove bullets from list*/
+ .nav-ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+ 
+header li a {
+   display: inline-block;
+   flex-direction: column;
+   padding: 0 10px;
+   font-size: 1.2em;
+   font-weight: bold;
+   color: white;
+   text-decoration: none;
+   list-style-type: none;
+   text-transform: uppercase;
+   letter-spacing: 1px;
  }
 
  body {
@@ -28,7 +49,7 @@
    align-items: center;
    padding: 20px;
    margin: 20px;
-   background-color: #fff;
+   background-color: #fdfdf6;
    border-radius: 5px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
@@ -42,7 +63,7 @@
    align-items: center;
    padding: 20px;
    margin: 20px;
-   background-color: #fff;
+   background-color: #fdfdf6;
    border-radius: 5px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
@@ -81,7 +102,7 @@
    align-items: center;
    padding: 20px;
    margin: 20px;
-   background-color: #fff;
+   background-color: #fdfdf6;
    border-radius: 5px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
