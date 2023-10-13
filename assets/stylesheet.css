@@ -1,176 +1,96 @@
- :root {
-     --green1: #d2e1cc;
-     --green2: #5e8d83;
-     --green3: #114538;
-     --green4: #0f444c;
-     --green5: #161d23;
-
-
+ header {
+   display: flexbox;
+   flex-direction: column;
+   background-color: #333;
+   color: #fff;
+   padding: 15px;
+   text-align: center;
  }
-
-
-
- * {
-     background-color: rgb(215, 234, 240);
-     flex-direction: colum;
- }
-
- /* Name in this seciont */
-
-
 
  .header-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: 90%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: var(--green5);
-    color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: ;
-    padding-bottom: 5%;
-    z-index: 1;
-}
-
+   display: flexbox;
+   flex-direction: column;
+   justify-content: center;
+ }
 
  body {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     margin: 0;
-     min-height: 100vh;
- }
-
- nav {
-    display: flex;
-    flex-direction: inline block
-     margin-right: 60%;
-     
- }
-
- insta-log {}
-
- img {
-     width: 20%;
-     z-index: 0;
-     border-radius: 10%;
-     padding: 5%;
-     border: solid whitesmoke;
-}
-
- h1 {
-     display: flex;
-     flex-direction: column;
-     z-index: 1;
-     margin-left: -70%;
-     margin-top: 5%;
-     font-family: cambria;
-     cochin,
-     georgia,
-     times,
-     'times new roman',
-     serif;
-     background-color: var(--green5);
-     color: rgb(247, 242, 231);
-     -webkit-text-stroke: .5px black;
-
- }
-
- h2 {
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     position: relative;
-     justify-content: center;
-     align-content: center;
-     margin-left: 2%;
-     border: solid var(--green2);
-     border-radius: 4%;
-     padding: 1%;
-     width: fit-content;
- }
-
- .horiseon-img {
-     width: 50%;
- }
-
- flex-container {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     flex-direction: column;
-     align-items: center;
-
+   display: flexbox;
+   background-color: #54b2e9;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.6em;
+   margin: 0;
  }
 
  .about-me {
-     display: flex;
-     flex-direction: column;
-     justify-content: left;
-     margin-right: 50%;
-     margin-top: 5%;
-     margin-bottom: 5%;
-     padding: 2%;
-     width: fit-content;
-
+   display: flexbox;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   margin: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
 
- .projects {
-    margin-right: 50%;
-    margin-left: 2%;
+ .flex-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   margin: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
 
- h4 {
-     color: var(--green5);
-     flex-basis: 100%;
-     flex-direction: row;
-     flex-wrap: wrap;
-     flex: 1 1 20%;
-     border: solid var(--green2);
-     padding: 5%%;
 
+ .flex-child1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   width: 40%;
+   padding: 2%;
+   margin: 2%;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
 
- .aside {
-    display: flex
-    margin-right: 50%;
-
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+ .flex-child2 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   width: 40%;
+   padding: 2%;
+   margin: 2%;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
 
- .contact-me {
-        display: flex;
-        flex-direction: column;
-        margin-left: 2%;
- }
-
- footer {
-     margin-top: 100px;
- }
-
- @media screen and (max-width: 992px) {
-     header {
-         background: #772014;
-     }
- }
+ /* screen flex 768 */
 
  @media screen and (max-width: 768px) {
-     header {
-         background-color: #bb8588;
 
-     }
- }
+   /* Flex whole page */
+   header,
+   nav,
+   body,
+   footer {
+     display: flex;
+     flex-direction: column;
+   }
 
- @media screen and (max-width: 576px) {
-     header {
-         background-color: #8ac4ff;
-     }
- }
+   /* Make project2 stack below the body */
+   .flex-container {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .flex-child2 {
+     order: 2;
+   }
