@@ -75,6 +75,8 @@
    margin: 0;
  }
 
+ /* About Me Section*/
+
  .about-me {
    display: flexbox;
    flex-direction: column;
@@ -128,6 +130,8 @@
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
 
+/* Contact Me Section */
+
  .contact-me {
    display: flexbox;
    flex-direction: column;
@@ -142,8 +146,25 @@
 
  .contact-ul {
    display: flex;
+   justify-content: center;
    align-items: center;
    list-style-type: none;
+ }
+
+
+ .insta-icon {
+   width: 20%;
+   margin: px;
+ }
+
+ .linkedin-icon {
+   width:50%;
+   margin: px;
+ }
+
+ .github-icon {
+   width: 100%;
+
  }
 
  .footer {
