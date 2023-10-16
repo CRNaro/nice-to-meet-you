@@ -29,7 +29,6 @@
    justify-content: center;
    align-items: center;
    font-family: lobster;
-   cursive;
    font-size: 2.5em;
    font-weight: bold;
    color: white;
@@ -130,10 +129,10 @@
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
  }
 
-/* Contact Me Section */
+ /* Contact Me Section */
 
  .contact-me {
-   display: flexbox;
+   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -151,19 +150,18 @@
    list-style-type: none;
  }
 
-
  .insta-icon {
-   width: 20%;
+   width: 5%;
    margin: px;
  }
 
  .linkedin-icon {
-   width:50%;
+   width: 5%;
    margin: px;
  }
 
  .github-icon {
-   width: 100%;
+   width: 5%;
 
  }
 
